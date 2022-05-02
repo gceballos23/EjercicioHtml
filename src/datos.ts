@@ -6,12 +6,12 @@ let alturaRotulo = document.getElementById("alturaRotulo");
 baseRotulo.innerHTML = "Ingrese la Base del Rectangulo";
 alturaRotulo.innerHTML = "Ingrese la Altura del Rectangulo";
 
-let altura = parseInt(datoAltura.value, 10);
-let base = parseInt(datoBase.value, 10);
+let altura: number = Number(datoAltura.value);
+let base: number = Number(datoBase.value);
 let area: number = altura * base;
 
 btnEnv.addEventListener("click", () => {
   console.log("La Altura es ", datoAltura.value);
   console.log("La Base es ", datoBase.value);
-  console.log("El area es", area);
+  console.log("El area es", datoAltura.value * datoBase.value);
 });
